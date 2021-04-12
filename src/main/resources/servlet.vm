@@ -1,0 +1,22 @@
+<html>
+    <head>
+        <title>Project word counter Servlet: $proj</title>
+    </head>
+    <body>
+        <h1>
+            Project word counter: $proj
+        </h1>
+        <table>
+            <tr>
+                <th>Word</th>
+                <th>Count</th>
+            </tr>
+            #foreach($mapKey in $map.keySet())
+            <tr>
+                <td>$mapKey</td>
+                <td>$!{map.get($mapKey)}</td>
+            </tr>
+            #end
+        </table>
+    </body>
+</html>
